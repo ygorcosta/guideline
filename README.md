@@ -14,7 +14,7 @@ A estrutura do **Marble** é separada em **5** grupos, são eles:
 
 ## Formatação
 
-Seguimos os padrões do `cssguilen.es`. Nosso objetivo é menter um código simples e limpo, ao qual qualquer pessoa poderá contribuir e dar manutenção.
+Seguimos os padrões do [cssguilen.es](https://cssguidelin.es/). Nosso objetivo é menter um código simples e limpo, ao qual qualquer pessoa poderá contribuir e dar manutenção.
 
 De maneira geral, utilizamos as seguintes formatações:
 
@@ -29,39 +29,55 @@ De maneira geral, utilizamos as seguintes formatações:
 
 Aqui vão algumas formatações a serem seguidas para que possamos ter uma melhor leitura do código:
 
-* **uma** linha para regras de bastante relacionadas
-* **duas** linhas para regras não tanto relacionadas
-* **cinco** linhas para regras não relacionadas
+* **uma linha** para regras de bastante relacionadas
+* **duas linhas** para regras não tanto relacionadas
+* **cinco linhas** para regras não relacionadas
 
 ```
-.topbar {
+.c-topbar {
 	background: $secondary;
 }
 
-	.topbar-logo {
+	.c-topbar .logo {
 		height: base(6);
 		width: base(6);
 	}
 
 
-	.topbar-menu {
+	.c-topbar .menu {
 		padding: base(1) 0;
 	}
-
-	.topbar-menu__link {
-		color: rgba($primary, 0.8);
-	}
-
-
+	
+		.c-topbar .menu .link {
+			color: rgba($primary, 0.8);
+		}
 
 
 
-.footer {
-	background: $primary;
+
+
+.link {
+	color: inherit;
+	text-decoration: none;
 }
 ```
 
 ## Sintaxe
+
+Para um elemento/componente de UI mais complexo, aqueles que possuem várias classes ou que possuem outros elementos dentro dele, preferímos utilizar a convenção de nomenclatura do [RSCSS](http://rscss.io/css-structure.html).
+
+```
+.c-topbar {
+  .link { /* ... */ }
+  .logo { /* ... */ }
+  .menu { /* ... */ }
+
+  // variants
+  -small { /* ... */ }
+  -large { /* ... */ }
+}
+```
+
 
 
 
