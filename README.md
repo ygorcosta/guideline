@@ -35,30 +35,30 @@ Aqui vão algumas formatações a serem seguidas para que possamos ter uma melho
 
 ```
 .c-topbar {
-	background: $secondary;
+  background: $secondary;
 }
 
-	.c-topbar .logo {
-		height: base(6);
-		width: base(6);
-	}
-
-
-	.c-topbar .menu {
-		padding: base(1) 0;
-	}
+  .c-topbar .logo {
+    height: base(6);
+    width: base(6);
+  }
+  
+  
+  .c-topbar .menu {
+    padding: base(1) 0;
+  }
 	
-		.c-topbar .menu .link {
-			color: rgba($primary, 0.8);
-		}
+    .c-topbar .menu .link {
+      color: rgba($primary, 0.8);
+    }
 
 
 
 
 
 .link {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 ```
 
@@ -78,9 +78,6 @@ Para um elemento/componente de UI mais complexo, aqueles que possuem várias cla
 }
 ```
 
-
-
-
 ## Tipografia e rítmo vertical
 
 Para nós, a tipografia é muito importante. Foi por isso que a separamos um local especial em `settings`, neste ambiente definimos tudo sobre este cara.
@@ -99,7 +96,7 @@ Para atribuir um tamanho, padding ou margin, respeitando a `baseline`, você dev
 
 ```
 .foo {
-	padding: base(2) base(4);
+  padding: base(2) base(4);
 }
 ```
 
@@ -107,6 +104,6 @@ O output será:
 
 ```
 .foo {
-	padding: 12px 24px;
+  padding: 12px 24px;
 }
 ```
